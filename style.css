@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+body>section{
+
+    margin: auto;
+}
+
+.container--header{
+    background-color: #e8f8f8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dark-mode{
+    background-color: transparent;
+    border: none;
+}
+
+#logo{
+    mix-blend-mode: multiply;
+}
+
+.button--full{
+    color: white;
+    background-color: #00baba;
+    border: none;
+
+}
+
+p{
+    font-family: "Graphik";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.background{
+    
+}
+
+.header--background{
+    background-color: #e8f8f8;
+    display: flex;
+    justify-content: center;
+}

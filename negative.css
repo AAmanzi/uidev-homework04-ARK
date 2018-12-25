@@ -16,35 +16,39 @@ body{
     margin: 0px;
     padding: 0px;
     cursor: url("./assets/heart.png"), crosshair;
-    
 }
 
 body>section{
     margin: auto;
+    background-color: #111111;
+    color: white;
 }
 
 ::selection{
     color: #00baba;
-    background: #e8f8f8;
+    background: rgba(0, 186, 186, 0.1);
 }
 
 .container--header{
-    background-color: #e8f8f8;
+    background-color: rgba(0, 186, 186, 0.1);;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-size: 10px 10px;
 }
 
-.dark-mode{
+#light-mode{
     background-color: transparent;
     border: none;
     padding-left: 20px;
     padding-right: 20px;
 }
 
+#dark-mode{
+    display: none;
+}
+
 #logo{
-    mix-blend-mode: multiply;
     max-width: 170px;
     height: 50px;
 }
@@ -88,7 +92,7 @@ a{
 }
 
 .header--background{
-    background-color: #e8f8f8;
+    background-color: rgba(0, 186, 186, 0.1);
     display: flex;
     justify-content: center;
 }
@@ -124,9 +128,14 @@ h3{
     width: 15px;
 }
 
+.links--social{
+    display: flex;
+    align-content: center;
+}
+
 .button--social{
     font-family: "Graphik-Semibold";
-    background-color: #e8f8f8;
+    background-color: rgba(0, 186, 186, 0.1);
     border: none;
     padding: 15px;
     margin: 0px 5px;
@@ -150,8 +159,9 @@ h3{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-image: url(assets/contacts.png);
+    background-image: url(assets/contactsNegative.png);
     background-position: center;
+    background-repeat: no-repeat;
     height: 530px;
 }
 
@@ -180,7 +190,7 @@ input{
     border: none;
     border-bottom-style: solid;
     border-color: #00baba;
-    background-color: #e8f8f8;
+    background-color: rgba(0, 186, 186, 0.1);
     font-family: "Graphik-Regular";
     margin-top: 5px;
     margin-bottom: 5px;
@@ -237,7 +247,7 @@ input, select, textarea{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #e8f8f8;
+    background-color: rgba(0, 186, 186, 0.1);
     padding: 50px 0px;
 }
 

@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ARK by Alex - Acts of Random Kindness</title>
-    <link rel="stylesheet" href="./style.css"/>
-
+    <link rel="stylesheet" href="./positive.css"/>
 </head>
 <body>
     <section>
         <div class="container--header">
             <img id="logo" src="assets/logo.png" alt="Logo">
             <div id="header-right">
-            <button class="dark-mode"><img src="assets/moon.png" alt="moon" height="40" width="40"></button>
+            <button id="dark-mode" onclick="changeCSS('negative.css', 0);"><img src="assets/moon.png" alt="moon" height="40" width="40"></button>
+            <button id="light-mode" onclick="changeCSS('positive.css', 0);"><img src="assets/sun.png" alt="moon" height="40" width="40"></button>
             <button class="button--full">Join Us</button>
             </div>
         </div>
 
         <div class="header--background">
-            <img class="background" src="assets/header-background.png" alt="main-picture">
+            <img id="background" src="assets/header-background.png" alt="main-picture">
         </div>
         
         <article>
@@ -45,7 +45,7 @@
                     </button>
                     <button class="button--social">
                         <div class="share">
-                            <img src="assets/twitter.png" alt="twitter" height="10" width="13">
+                            <img src="assets/twitter.png" alt="twitter" height="12" width="15">
                         </div>
                     </button>
                     <button class="button--social">
@@ -67,7 +67,7 @@
                     true so we are calling on friends to <a href="" class="button--text">Join us.</a>
                 </p>
             </article>
-            <img src="assets/image-charity.png" alt="charity">
+            <img id="charity" src="assets/image-charity.png" alt="charity">
         </div>
 
         <div class="container--middle">
@@ -88,7 +88,7 @@
         </div>
 
         <div class="container--bottom">
-            <img src="assets/image-handshake.png" alt="handshake">
+            <img id="handshake"src="assets/image-handshake.png" alt="handshake">
             <article>
                 <h2>And after Christmas?</h2>
                 <p class="text-bottom">
@@ -100,7 +100,7 @@
                 </p>
             </article>
         </div>
-        
+
         <div class="footer">
             <article>
                 <h2>Ready to join us this Christmas?</h2>
@@ -122,5 +122,6 @@
             </p>
         </div>
     </section>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
